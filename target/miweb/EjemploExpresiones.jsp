@@ -9,7 +9,7 @@
     <h1>
         Ejemplo de Expresiones JSP
     </h1>
-    Convirtiendo a mayúsculas: <%= new String ("hola solchu").toUpperCase() %>  <!--  Expresiones Java  -->
+    Convirtiendo a mayusculas: <%= new String ("hola solchu").toUpperCase() %>  <!--  Expresiones Java  -->
     <br>
     La suma de 5 + 17 es: <%= 5 + 17 %>  <!-- Expresiones matemáticas -->
     <br>
