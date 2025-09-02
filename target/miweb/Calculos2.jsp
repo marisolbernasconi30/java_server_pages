@@ -12,6 +12,10 @@
 <body>
     <h1> 
         La suma entre 5 y 15 es igual a: <%= Calculos1.sumar(5,15) %>
+        <br>
+        La resta entre 5 y 15 es igual a: <%= Calculos1.restar(5,15) %>
+        <br>
+        La multiplicacion entre 5 y 15 es igual a: <%= Calculos1.multiplicar(5,15) %>
     </h1>
 </body>
 </html>
