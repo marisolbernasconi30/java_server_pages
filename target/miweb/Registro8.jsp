@@ -14,6 +14,9 @@
     <h3> Apellidos: <%= request.getParameter("apellidos") %> </h3>
     <br>
     <h3> Edad: <%= request.getParameter("edad") %> </h3>
+    <br>
+    <jsp:include page="Fecha10.jsp" />
+
 
 </body>
 </html>
