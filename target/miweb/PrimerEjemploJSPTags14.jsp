@@ -1,10 +1,10 @@
 <%@ page contentType="text/html; charset=UTF-8" %>
-<%@ taglib prefix="c" uri="http://jakarta.ee/jstl/core" %>
 
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
 
 <%
     String[] alumnos = { "Ana", "Luis", "Gaston", "Maria", "Juan" };
-    request.setAttribute("alumnos", alumnos);
+    pageContext.setAttribute("alumnos", alumnos);
 %>
 
 <!DOCTYPE html>
@@ -17,11 +17,11 @@
 
 <h2>Lista de alumnos con JSTL</h2>
 
-<ul>
-    <c:forEach var="alumno" items="${alumnos}">
-        <li>${alumno}</li>
+
+    <c:forEach var="alum" items="${alumnos}">
+        ${alum}<br>
     </c:forEach>
-</ul>
+
 
 </body>
 </html>
