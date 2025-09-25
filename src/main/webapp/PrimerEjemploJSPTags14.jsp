@@ -2,10 +2,7 @@
 
 <%@ taglib prefix="c" uri="jakarta.tags.core" %>
 
-<%
-    String[] alumnos = { "Ana", "Luis", "Gaston", "Maria", "Juan" };
-    pageContext.setAttribute("alumnos", alumnos);
-%>
+
 
 <!DOCTYPE html>
 <html>
@@ -16,12 +13,15 @@
 <body>
 
 <h2>Lista de alumnos con JSTL</h2>
-
-
-    <c:forEach var="alum" items="${alumnos}">
-        ${alum}<br>
-    </c:forEach>
-
+<%
+String [] columnHeaders = {"Banana", "Apple", "Carrot", "Orange", "Lychee", "Permisson"};
+request.setAttribute("columnHeaders", columnHeaders);
+%>
+<c:forEach var="columnHeader" items="${columnHeaders}">
+    <th>
+        <c:out value="${columnHeader}" />
+    </th>
+</c:forEach>
 
 </body>
 </html>
